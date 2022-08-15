@@ -36,6 +36,10 @@ public class SpringSchApplication {
 		return "welcome to cicd";
 	}
 	
+	@Bean
+	public ThreadPoolTaskScheduler tPoolSch() {
+		return new ThreadPoolTaskScheduler();
+	}
 	
 	/*
 	 * echo "# github-actions" >> README.md git init git add README.md git commit -m
